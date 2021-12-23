@@ -1,8 +1,6 @@
 services:
   hello-world:
-    build: 
-      context: ./test-1345
-      dockerfile: test-1345/Dockerfile
+    build: .
 
 ingress:
   service: hello-world
