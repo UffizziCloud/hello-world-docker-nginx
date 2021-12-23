@@ -1,0 +1,9 @@
+services:
+  hello-world:
+    build: 
+      context: ./test-1345
+      dockerfile: test-1345/Dockerfile
+
+ingress:
+  service: hello-world
+  port: 80
