@@ -1,6 +1,7 @@
 services:
   hello-world:
-    build: ./test-1345
+    build: 
+      context: ./test-1345
 
 ingress:
   service: hello-world
