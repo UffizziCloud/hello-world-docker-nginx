@@ -1,7 +1,7 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/NealArw/hello-world-1
+      context: https://github.com/NealArw/hello-world-1#compose-test
       dockerfile: /Dockerfile
       
 x-uffizzi:
