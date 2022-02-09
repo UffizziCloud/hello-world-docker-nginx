@@ -5,6 +5,9 @@ services:
       dockerfile: /Dockerfile
     environment:
       TEST1: test11
+    configs:
+      - source: my_config_2
+        target: /etc/nginx/conf.d/default.conf
       
 x-uffizzi:
   ingress:
@@ -18,3 +21,7 @@ x-uffizzi:
     deploy_preview_when_image_tag_is_created: true
     delete_preview_when_pull_request_is_closed: true
     deploy_preview_when_pull_request_is_opened: true
+
+configs:
+  my_config_2:
+    file: ./config2/vote2.conf
