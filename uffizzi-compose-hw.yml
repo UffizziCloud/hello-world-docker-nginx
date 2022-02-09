@@ -12,7 +12,7 @@ services:
 x-uffizzi:
   ingress:
     service: hello-world
-    port: 80
+    port: 81
     
   continuous_preview:
     share_to_github: true
@@ -24,4 +24,4 @@ x-uffizzi:
 
 configs:
   my_config_2:
-    file: ./config2/vote2.conf
+    file: ./config/vote.conf
