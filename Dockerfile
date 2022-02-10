@@ -1,3 +1,10 @@
+
+ARG buildno
+ARG gitcommithash
+
+RUN echo "Build number: $buildno"
+RUN echo "Based on commit: $gitcommithash"
+
 FROM nginx:1.19
 
 COPY index.html /usr/share/nginx/html/index.html
