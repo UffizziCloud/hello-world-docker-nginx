@@ -8,8 +8,6 @@ RUN mkdir -p /usr/share/nginx/main
 COPY main.html /usr/share/nginx/main/index.html
 COPY images /usr/share/nginx/main/images/
 
-ARG buildno
-ARG gitcommithash
+ARG testarg
 
-RUN echo "Build number: $buildno"
-RUN echo "Based on commit: $gitcommithash"
+RUN echo "Uffizzi test argument: $testarg"
