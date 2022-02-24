@@ -1,8 +1,8 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/NealArw/hello-world-1
-      dockerfile: /Dockerfile
+      context: ./test-1345
+      dockerfile: test-1345/Dockerfile
       
 x-uffizzi:
   ingress:
