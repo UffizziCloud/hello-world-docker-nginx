@@ -5,7 +5,7 @@ services:
 x-uffizzi:
   ingress:
     service: hello-world
-    port: 82
+    port: 80
     
   continuous_preview:
     share_to_github: true
