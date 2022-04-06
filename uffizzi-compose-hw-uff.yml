@@ -1,7 +1,7 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/zipofar/uffizzi#1479
+      context: https://github.com/zipofar/uffizzi:1479
       dockerfile: /Dockerfile
     environment:
       TEST1: test11
