@@ -7,7 +7,3 @@ RUN mkdir -p /usr/share/nginx/main
 
 COPY main.html /usr/share/nginx/main/index.html
 COPY images /usr/share/nginx/main/images/
-
-ARG testarg
-
-RUN echo "Uffizzi test argument: $testarg"
