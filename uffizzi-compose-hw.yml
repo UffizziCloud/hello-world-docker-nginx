@@ -1,6 +1,10 @@
 services:
   hello-world:
-    build: ./
+    build: 
+      context: https://github.com/NealArw/hello-world-1
+      dockerfile: /Dockerfile
+    environment:
+      TEST12: test12
       
 x-uffizzi:
   ingress:
@@ -9,7 +13,7 @@ x-uffizzi:
     
   continuous_preview:
     share_to_github: true
-    delete_preview_after: 100h
+    delete_preview_after: 2h
     delete_preview_when_image_tag_is_updated: true
     deploy_preview_when_image_tag_is_created: true
     delete_preview_when_pull_request_is_closed: true
